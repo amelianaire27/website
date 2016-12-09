@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+  <title>JavaScript Loop Demo</title>
+<!-- 
+Author: Amelia R. White
+File: ~/aw91760/A5/jsloopdemo.html
+Honor Code: I acknowledge that this code represents my own work: 10/27/2016
+-->
+  <meta charset="UTF-8" />
+  <meta name="description" content="JavaScript Loop Demo" />
+  <meta name="keywords" content="javascript, control flow, loops, assignment" />
+  <meta name="author" content="Amelia R. White" />
+
+  <script>
+    function tableRows(){
+      var input = prompt("Enter a number greater than 0 to see rows MAGICALLY appear on the page!");
+      var validatedInput;
+      if (input < 0){
+        alert("Sorry, the number has to be GREATER THAN 0. Try again!");
+        location.reload();
+      } else if  (isNaN(input) === true) {
+        alert("Sorry, that's not a number! Try again!");
+        location.reload();
+      } else {
+        validatedInput = input;
+        var tbl = document.createElement("table");
+        tbl.border = "1";
+        var i;
+        for (i = 1; i <= input; i++) {
+          var tblRow = document.createElement("tr");
+          var tblData = document.createElement("td");
+          var rowText = document.createTextNode("Row " + i)
+          tbl.appendChild(tblRow);
+          tblRow.appendChild(tblData);
+          tblData.appendChild(rowText);
+        }
+      }
+      var jsTable = document.getElementById("pageTable");
+      jsTable.appendChild(tbl);
+    }
+  </script>
+</head>
+<body onload="tableRows()">
+  <p id="pageTable">
+  </p>
+  <a href="jstimedemo.html">Click here to go to Part 1 of this assignment</a>
+</body>
+</html>

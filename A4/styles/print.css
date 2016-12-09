@@ -1,0 +1,37 @@
+/*
+  
+   Wildcat Computer Science Style Sheet for printer
+   Author: Amelia R. White
+   Date:   10/5/2016
+
+   Filename:         print.css
+   Supporting Files: none
+
+*/
+
+@media print {
+    body {
+        margin: 0.5in;
+        width: 8.5in;
+        height: 11in;
+    }
+}
+
+head, #footer, img, a, #nav a, #callout {
+    display: none;
+    padding: 0in;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 600;  
+}
+
+
+
+
+
+
+
+
+
+

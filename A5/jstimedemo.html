@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+  <title>JavaScript Time Demo</title>
+<!-- 
+Author: Amelia R. White
+File: ~/aw91760/A5/jstimedemo.html
+Honor Code: I acknowledge that this code represents my own work: 10/26/2016
+-->
+  <meta charset="UTF-8" />
+  <meta name="description" content="JavaScript Time Demo" />
+  <meta name="keywords" content="javascript, date, time, assignment" />
+  <meta name="author" content="Amelia R. White" />
+  <script>
+    function currentDay(){
+      var d = new Date();
+      var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+      var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+      var min = d.getMinutes();
+      var daynum = d.getDate();
+      var cYear = d.getFullYear();
+
+      var wkday;
+      switch (d.getDay()) {
+        case 0:
+          wkday = weekdays[0];
+          break;
+        case 1:
+          wkday = weekdays[1];
+          break;
+        case 2:
+          wkday = weekdays[2];
+          break;
+        case 3:
+          wkday = weekdays[3];
+          break;
+        case 4:
+          wkday = weekdays[4];
+          break;
+        case 5:
+          wkday = weekdays[5];
+          break;
+        case 6:
+          wkday = weekdays[6];
+      }
+
+      var cMonth;
+      switch (d.getMonth()) {
+        case 0:
+          cMonth = months[0];
+          break;
+        case 1:
+          cMonth = months[1];
+          break;
+        case 2:
+          cMonth = months[2];
+          break;
+        case 3:
+          cMonth = months[3];
+          break;
+        case 4:
+          cMonth = months[4];
+          break;
+        case 5:
+          cMonth = months[5];
+          break;
+        case 6:
+          cMonth = months[6];
+          break;
+        case 7:
+          cMonth = months[7];
+          break;
+        case 8:
+          cMonth = months[8];
+          break;
+        case 9:
+          cMonth = months[9];
+          break;
+        case 10:
+          cMonth = months[10];
+          break;
+        case 11:
+          cMonth = months[11];
+      }
+
+      var hr = d.getHours();
+      var timeOfDay;
+      if (hr <= 11) {
+        timeOfDay = "morning";
+      } else if (hr <= 16) {
+        timeOfDay = "afternoon";
+      } else {
+        timeOfDay = "evening";
+      }
+
+      var formatHr;
+      var amOrPm;
+      if (hr > 12){
+        formatHr = hr - 12;
+        amOrPm = "P.M.";
+      } else {
+        formatHr = hr;
+        amOrPm = "A.M";
+      }
+      
+      var formatMin;
+      if (min < 10){
+        formatMin = "0" + min;
+      } else {
+        formatMin = min;
+      }
+
+      var greeting = "Good " + timeOfDay + ", it is " + formatHr + ":" + formatMin + " " + amOrPm + " on " + wkday + ", " + cMonth + " " + daynum + ", "  + cYear + "."
+      window.alert(greeting);
+    }
+  </script>
+
+</head>
+<body>
+  <p>
+    <button value = "Current Day" OnClick = currentDay()>Click here to see the current date and time!</button>
+  </p>
+  <p>
+    <a href="jsloopdemo.html">Click here to go to Part 2 of this assignment.</a>
+  </p>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<!-- 
+
+   Rock Paper Scissors
+   Author: Amelia Rae White
+   Date: 11/25/2016
+
+   Filename: rps.html
+   Supporting files: scissors.jpg, rock.jpg, paper.jpg, rps.js
+
+-->
+    <meta charset="utf-8" />
+    <title>Rock Paper Scissors</title>
+    <meta name="description" content="JavaScript game pits you against the computer in Rock Paper Scissors" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="rps.js"></script>
+  </head>
+  <body>
+    <div id="rules">
+      <h1>Rock Paper Scissors</h1>
+      <h3>Rules:</h3>
+      <h4>Rock Crushes Scissors</h4>
+      <h4>Paper Covers Rock</h4>
+      <h4>Scissors Cut Paper</h4>
+      <h5>Click on the image of your choice to play against the computer! Best of 3 is the winner.</h5>
+    </div>
+    <div id="choiceImg">
+      <img src="scissors.jpg" class="rpsImg" name="scissors" id="3" alt="Scissors" onclick="highlight(this)" />
+      <img src="rock.jpg" class="rpsImg" name="rock" id="1" alt="Rock" onclick="highlight(this)" />
+      <img src="paper.jpg" class="rpsImg" name="paper" id="2" alt="Paper" onclick="highlight(this)" />
+    </div>
+    <div id="computerImg">
+    </div>
+    <button id="roundBtn" onclick="roundWinner(round); removeClass(); round++; location.reload()">Play Round!</button>
+    <script>
+      var round = 0;
+    </script>
+  </body>
+</html>

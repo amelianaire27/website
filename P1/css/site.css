@@ -1,0 +1,188 @@
+body {
+  color: #ffffff;
+  padding: 0;
+}
+
+/*Positioning Rules*/
+
+header {
+  float: left;
+  position: relative;
+  height: 150px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#main nav {
+  float: left;
+  height: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.maincontent {
+  overflow: auto;
+}
+
+.maincontent h1, .maincontent h2, .maincontent h3, 
+.maincontent h4, .maincontent h5, .maincontent h6{
+  font-family: 'Rammetto One', cursive;
+  text-transform: uppercase;
+}
+
+#footer {
+  text-align: center;
+  font: 12px 'PT Sans Narrow', sans-serif;
+  padding: 20px 0px 10px 0px;
+}
+
+.twtr-doc {
+  width: 100% !important;
+}
+
+#assignmentlist {
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+div.imglink {
+  margin: 10px;
+  width: 250px;
+  display: inline-block;
+
+}
+
+div.imglink img {
+  width: 100%;
+  height: 150px;
+}
+
+div.imgcaption {
+  padding: 5px;
+  text-align: center;
+}
+
+.maincontent img {
+    margin-top: 20px;
+    border: 2px solid #d9e6f2;
+}
+
+figcaption {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 14px;
+
+}
+
+th {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px;
+  border-bottom: 1px solid #d9e6f2;
+  text-align: center;
+}
+
+td {
+  text-align: left;
+  font-size: 18px;
+  padding: 8px;
+
+}
+
+#employment td {
+  font-size: 14px;
+  border-bottom: 1px solid #d9e6f2;
+  text-align: center;
+}
+
+#employment td li {
+  text-align: left;
+}
+
+#skills td, #education td {
+    border-bottom: 1px solid #d9e6f2;
+}
+.tabletitle, .tabledesc {
+  text-align: center;
+  font-family: 'PT Sans Narrow', sans-serif !important;
+}
+
+.tabletitle {
+  font-weight: bold;
+}
+
+#mapheader {
+  padding: 25px 10px 25px 10px;
+  text-align: center;
+}
+
+/* Styling Rules*/
+
+
+#mainheader {
+  background: url(../images/space.jpg) center center no-repeat; 
+  background-size: cover;
+  color: #000000;
+  font-family: 'Rammetto One', cursive;
+  text-transform: uppercase;
+  
+}
+
+#main a {
+
+    display: block;
+    float: left;
+    color: #94b8b8;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#main a:hover, a:active {
+  color: #527a7a;
+  text-decoration: none;
+}
+
+.maincontent {
+    background-color: #292e30;
+    color: #ffffff;
+    font: 18px 'PT Sans Narrow', sans-serif;
+}
+
+#footer {
+  color: #94b8b8;
+  background-color: #527a7a;
+}
+
+#footer a {
+  text-decoration: none;
+  color: #d9e6f2;
+}
+
+.maincontent a {
+  text-decoration: none;
+  color: #527a7a;
+}
+
+.maincontent a:hover, a:active {
+  text-decoration: none;
+  color: #d9e6f2;
+}
+
+table li {
+  list-style: square;
+}
+
+#formelements input {
+  color: #000000;
+}
+
+#formelements button {
+  color: #000000;
+  margin-top: 5px;
+}

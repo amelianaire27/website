@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Weber State Conference Room Schedule</title>
+
+<!-- 
+Author: Amelia Rae White
+File: ~aw91760/index.html
+Honor Code: I acknowledge that this code represents my own work: Dated 9/19/2016
+-->
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="A sample table and form." />
+	<meta name="keywords" content="table, form, conference room" />
+	<meta name="author" content="Amelia Rae White" />
+
+
+	</head>
+
+	<body>
+		<div id="tabledemo">
+			<h1>Weber State Conference Room Schedule</h1>
+			<table id="schedule" border="1" summary="This table provides a listing of the room reservations from 8:00 a.m. to 5:00 p.m. at the Weber State CS Conference Room">
+				<caption>CS Conference Room Schedule<br/>Aug. 28-Sept. 3, 2016</caption>
+				<colgroup span="19">
+					<col span="1" class="firstColumn" />
+					<col span="18" class="timeColumns" />
+				</colgroup>
+				<thead>
+					<tr>
+						<td></td>
+						<th colspan="8">Morning</th>
+						<th colspan="2">Noon</th>
+						<th colspan="8">Afternoon</th>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr>
+						<td></td>
+						<td colspan="9">All times Mountain Daylight Time</td>
+						<td colspan="9">To book the conference room, email <a href="mailto:pbeck@weber.edu">Patrick Beck</a></td>
+					</tr>
+				</tfoot>
+				<tbody>
+					<tr>
+						<th>Day</th>
+						<th>8:00</th>
+						<th>8:30</th>
+						<th>9:00</th>
+						<th>9:30</th>
+						<th>10:00</th>
+						<th>10:30</th>
+						<th>11:00</th>
+						<th>11:30</th>
+						<th>12:00</th>
+						<th>12:30</th>
+						<th>1:00</th>
+						<th>1:30</th>
+						<th>2:00</th>
+						<th>2:30</th>
+						<th>3:00</th>
+						<th>3:30</th>
+						<th>4:00</th>
+						<th>4:30</th>
+					</tr>
+					<tr>
+						<th>Sunday</th>
+						<td colspan="18">Closed</td>
+					</tr>
+					<tr>
+						<th>Monday</th>
+						<td colspan="2">CS Breakfast Club</td>
+						<td colspan="4"></td>
+						<td colspan="4">Conference of Software Engineers</td>
+						<td colspan="2"></td>
+						<td colspan="6">CS Book Group</td>
+					</tr>
+					<tr>
+						<th>Tuesday</th>
+						<td colspan="8">Computer Expo Set Up</td>
+						<td colspan="2"></td>
+						<td colspan="8">Computer Expo Opening Session</td>
+					</tr>
+					<tr>
+						<th>Wednesday</th>
+						<td colspan="14">Computer Expo</td>
+						<td colspan="4">Awards Ceremony</td>
+					</tr>
+					<tr>
+						<th>Thursday</th>
+						<td colspan="2"></td>
+						<td colspan="3">ACM Club</td>
+						<td colspan="3">Study Abroad Club</td>
+						<td colspan="4">Women in Computing Club</td>
+						<td colspan="3"></td>
+						<td colspan="3">Tutoring</td>
+					</tr>
+					<tr>
+						<th>Friday</th>
+						<td colspan="2"></td>
+						<td colspan="3">Freshman Seminar</td>
+						<td colspan="3"></td>
+						<td colspan="2">CS Luncheon</td>
+						<td colspan="5">Senior Seminar</td>
+						<td colspan="3">Tutoring</td>
+					</tr>
+					<tr>
+						<th>Saturday</th>
+						<td colspan="11">Video Game Club</td>
+						<td colspan="4"></td>
+						<td colspan="3">Tutoring</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="formdemo">
+			<h1>Personal Information Surveillance Form</h1>
+			<form action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi" method="post">
+				<fieldset id="namePwd">
+				<table id="info">
+					<tbody>
+						<tr>
+							<td><label for="fullName">Full Name</label></td>
+							<td>
+								<input type="text" name="name" id="fullName" />
+							</td>
+						</tr>
+						<tr>
+							<td><label for="email">Email</label></td>
+							<td>
+								<input type="text" name="email" id="email" />
+							</td>
+						</tr>
+						<tr>
+							<td><label for="pwd">Password</label></td>
+							<td>
+								<input type="password" name="password" id="pwd" />
+							</td>
+						</tr>
+						<tr>
+							<td><label for="confirmPwd">Confirm Password</label></td>
+							<td>
+								<input type="password" name="confirm" id="confirmPwd" />
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				</fieldset>
+				<fieldset id="favcolor">
+					<legend>Favorite Color</legend>
+					<label><input type="radio" name="color" value="blue" checked="checked" />Blue</label>
+					<label><input type="radio" name="color" value="purple" />Purple</label>
+					<label><input type="radio" name="color" value="green" />Green</label>
+				</fieldset>
+				<fieldset id="favday">
+					<legend>Favorite Days of the Week</legend>
+					<label><input type="checkbox" name="favDay" value="monday" />Monday</label>
+					<label><input type="checkbox" name="favDay" value="tuesday" />Tuesday</label>
+					<label><input type="checkbox" name="favDay" value="wednesday" />Wednesday</label>
+					<label><input type="checkbox" name="favDay" value="thursday" />Thursday</label>
+					<label><input type="checkbox" name="favDay" value="friday" checked="checked" />Friday</label>
+					<label><input type="checkbox" name="favDay" value="saturday" checked="checked" />Saturday</label>
+					<label><input type="checkbox" name="favDay" value="sunday" />Sunday</label>
+				</fieldset>
+				<fieldset id="mnthComment">
+					<table id="mnthTweet" border="1">
+						<tbody>
+							<tr>
+								<td>Favorite Month of the Year: </td>
+								<td>
+									<select name="favMonth">
+										<option selected="selected" value="">Select Month</option>
+										<optgroup label="Winter">
+											<option value="december">December</option>
+											<option value="january">January</option>
+											<option value="february">February</option>
+										</optgroup>
+										<optgroup label="Spring">
+											<option value="march">March</option>
+											<option value="april">April</option>
+											<option value="may">May</option>
+										</optgroup>
+										<optgroup label="Summer">
+											<option value="june">June</option>
+											<option value="july">July</option>
+											<option value="august">August</option>
+										</optgroup>
+										<optgroup label="Fall">
+											<option value="september">September</option>
+											<option value="october">October</option>
+											<option value="november">November</option>
+										</optgroup>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>Twitter Comments</td>
+								<td>
+									<textarea name="comments" rows="7" cols="20"></textarea>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</fieldset>
+				<fieldset id="submission">
+					<input type="hidden" name="feedback" value="I really enjoyed this assignment! I learned a lot about forms that I didn't know before, and I felt sufficiently challenged but not overwhelmed." />
+					<input type="submit" name="sendForm" value="Submit Form" />
+					<input type="reset" name="clearForm" value="Clear Form" />
+				</fieldset>
+			</form>	
+		</div>
+	<p>
+		<a href="http://validator.w3.org/check?uri=referer">
+			<img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" />
+		</a>
+  	</p>
+	</body>
+</html>

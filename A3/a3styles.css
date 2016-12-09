@@ -1,0 +1,101 @@
+body {
+    color: #80c0c0;
+    background-color: #000000;
+
+}
+
+a:link {
+    color: red;
+    background-color: yellow;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #00ff00;
+
+
+}
+
+a:active {
+    color: #a05050;
+}
+
+.header {
+    font-family: 'Times New Roman', Georgia, serif, Courier;
+    font-variant: small-caps;
+    background-color: blue;
+    border: 5px dashed yellow;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.advertisement {
+    color: red;
+    background-image: url("small-background.jpg");
+    background-repeat: repeat-y;
+    background-color: grey;
+    font-size: 200%;
+    border: 5px solid red;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 25px 2px 25px 25px;
+}
+
+.special {
+    background-color: purple;
+}
+
+.sponsor {
+    color: #808000;
+    font-size: xx-large;
+
+}
+
+ul ul li {
+    font-size: x-large;
+    font-style: italic;
+}
+
+h2 em {
+    font-weight: 500;
+}
+
+h2 .pun {
+    color: white; /*This type of heading MUST be white and large!*/
+    line-height: 50px;
+    font-size: 40px;
+}
+
+#author {
+    padding: 20px 20px 20px 20px;
+    border: 20px groove white;
+}
+
+#assignment, .author {
+    font-family: 'Comic Sans MS', fantasy;
+}
+
+blockquote {
+    margin-left: 40px;
+    color: #00ff00;
+}
+
+h6 {
+    background-color: red !important;
+}
+
+h1, h2, blockquote {
+    background-color: #000080;
+}
+
+.pun::first-line {
+    font-weight: bold;
+    text-transform: capitalize;
+    background-color: navy;
+    color: aqua;
+}
+
+h2.pun::first-letter {
+    font-size: 200%;
+    color: yellow;
+}
