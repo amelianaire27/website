@@ -13,12 +13,14 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 5px 10px 5px;
 }
 
-header {
+#mainheader {
   float: left;
   position: relative;
   height: 200px;
   text-align: center;
   padding-top: 15px;
+  background-image: url(./images/golden-gate.jpg) center center no-repeat;
+  background-size: cover;
 }
 
 #accordion {
