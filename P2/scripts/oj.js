@@ -5,4 +5,6 @@ $(document).ready(function(){
     collapsible: true
   });
 
+  $("#tabs").tabs();
+
 });
