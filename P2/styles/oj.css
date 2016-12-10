@@ -5,7 +5,7 @@ html{
 body {
   font-family: Arial, Helvetica, sans-serif;
   text-align: left;
-  background-color: #75abff;
+  background-color: #646a72;
   color: #000000;
 }
 
@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 15px;
   background: url(../images/golden-gate.jpg) center center no-repeat;
   background-size: cover;
-  border: 3px darkslategray solid;
+  border: 3px black solid;
 }
 
 #mainheader h1, h2 {
@@ -45,4 +45,9 @@ main h2 {
 
 #accordion .ui-accordion-header {
   margin: 0px;
+}
+
+#arrest-sounds {
+  background: #000000 url("../scripts/jquery-ui-themes-1.12.1/themes/dark-hive/images/ui-bg_loop_25_000000_21x21.png") 50% 50% repeat;
+  color: #ffffff;
 }
