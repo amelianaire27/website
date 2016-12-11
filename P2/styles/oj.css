@@ -81,3 +81,15 @@ main h2 {
   margin: 10px;
   border-radius: 10px;
 }
+
+#trial {
+  clear: both;
+}
+
+#trial p{
+  background: #000000 url("../scripts/jquery-ui-themes-1.12.1/themes/dark-hive/images/ui-bg_loop_25_000000_21x21.png") 50% 50% repeat;
+  color: #ffffff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
