@@ -6,11 +6,4 @@ $(document).ready(function(){
   });
 
   $("#tabs").tabs();
-
-var arrestSound = $("#arrest-sounds audio");
-for (i = 0; i < arrestSound.length; i++){
-  arrestSound[i].onended = function (){
-      $(this).effect("blind");
-    }
-  }
 });
