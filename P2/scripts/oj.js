@@ -13,13 +13,24 @@ $(".arrest-sounds audio").on("play", function (){
     });
   });
 
-  $("body").append('<div id="dialog"/>')
-    $("#dialog").dialog({
-      height:400, width:500, modal: true, autoOpen:false
-    });
-    $('#child > img').on('click', function() {
-      $("#dialog").html($('<img />', {src:this.src}));
-      $("#dialog").dialog("open");
-    });
+  $(".transcript").click(function (){
+    $(this).effect("shake");
+  });
+
+  $(".dialog a").on("click", function(e){
+    e.preventDefault();
+    var page = $(this).attr("href");
+    var pageTitle = $(this).attr("title");
+    var $dialog = $("<div></div>")
+    .html('<iframe style="border: 0px; " src="' + page + '" width="100%" height="100%"></iframe>')
+    .dialog({
+      autoOpen: false,
+      modal: true,
+      height: 625,
+      width: 500,
+      title: pageTitle,
+  });
+  $dialog.dialog("open");
+});
 
 });

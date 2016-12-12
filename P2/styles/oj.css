@@ -72,6 +72,8 @@ main h2 {
 .arrest-sounds img {
   width: 318px;
   height: 238px;
+  margin: auto;
+  float: left;
 }
 
 #arrest-timeline {
@@ -86,10 +88,65 @@ main h2 {
   clear: both;
 }
 
-#trial p{
+#trial p, li{
   background: #000000 url("../scripts/jquery-ui-themes-1.12.1/themes/dark-hive/images/ui-bg_loop_25_000000_21x21.png") 50% 50% repeat;
   color: #ffffff;
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
+}
+
+#trial ul, li, a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #ffffff;
+}
+#trial a:active, a:hover {
+  color: #0972a5;
+}
+
+#trial li {
+  display: block;
+  float: left;
+  padding: 20px;
+  margin: 15px;
+}
+
+#verdict {
+  clear: both;
+}
+
+#verdict p, img{
+  background: #000000 url("../scripts/jquery-ui-themes-1.12.1/themes/dark-hive/images/ui-bg_loop_25_000000_21x21.png") 50% 50% repeat;
+  color: #ffffff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+#verdict img {
+  width: 98%;
+}
+
+#verdict audio {
+  width: 100%;
+}
+
+#verdict ul, li {
+  list-style-type: none;
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+}
+
+#verdict li {
+  display: block;
+  float: left;
+  padding: 20px;
+  margin: 15px;
+  width: 45%;
+}
+
+#verdict a:active, a:hover {
+  color: #0972a5;
 }
